@@ -1,0 +1,243 @@
+<!DOCTYPE html html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mywebsite</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ad67d15048.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                   
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#portfolio">Portfollio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            <div class="header-text">
+                <p>Data Analyst / Developer</p>
+                <h1>Hi,<br>I'm <span> Abhay Krishna</span> From India</h1>
+            </div>
+            </div>
+        </div>
+    
+
+
+        <div id="About">
+            <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="WhatsApp Image 2024-07-23 at 20.04.54_b6b4332e.jpg">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly skilled and results-driven Data 
+                        Scientist with extensive experience in 
+                        machine learning, deep learning, 
+                        data visualization, and SQL. Proven 
+                        track record of developing innovative 
+                        solutions to complex problems, with a 
+                        focus on real-world applications in 
+                        various domains including finance, 
+                        healthcare, and agriculture. Strong 
+                        proficiency in Python, Power BI, and 
+                        project management, with a keen 
+                        ability to manage requirements and 
+                        deliver impactful projects. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Power-BI</span><br></li>
+                            <li><span>Python</span><br></li>
+                            <li><span>Excel</span><br></li>
+                            <li><span>Machine Learning</span><br></li>
+                            <li><span>Data management & Visualization</span><br></li>
+                            <li><span>Power Point,Word,Microsoft Office</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023</span><br>Working as a intern at Luminar</li>
+                            <li><span>2019</span><br>VideoEditing</li>
+                            <li><span>2022</span><br>Web Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Big Data&Data Science</span><br>Luminar Technolab Kochi-2023-24</li>
+                            <li><span>Batchelor of computer application(BCA)</span><br>Silver Arts And Science College-2020-23</li>
+                            <li><span>Higher Secondary Diploma</span><br>Nochat Higher Secondary School</li>
+                            <li><span>Secondary Diploma</span><br>Nochat Higher Secondary School</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+               </div>
+            </div> 
+
+        </div>
+       <! ----------------services----------- -->
+
+       <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Analysis</h2>
+                    <p>For web development</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Web Design</h2>
+                    <p>For wedding videose and college programs etc</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h2>Data Visualization</h2>
+                    <p>For wedding photo editing and portraits</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+
+        </div>
+       </div>
+ <!----------------portfolio------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+
+                <div class="layer">
+                    <h3>Power BI</h3>
+                    <p>Proffessional video editing and content creation</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Machine Learning</h3>
+                    <p>Proffessional video editing and content creation</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Web evelopment</h3>
+                    <p>portfolio websites and etc</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+    </body>
+</html>
+
+<!------------------Contact me---------------->
+
+<div id="contact">
+    <div class="container contact-container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>abhayachu210@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +971 547645235</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/abhaykrishnap34" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/4_bhay__?igsh=cGczNTk0b3Rja292&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/abhay-krishna-p-101058284" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="ABHAY KRISHNA PH.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw1oDnxwM4bjcACQoTXUwfnavRJAW4069ZkaxgZUWfljuwjIiUDjnAVtcpoEz4r-A3N4w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
